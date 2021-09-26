@@ -8,7 +8,6 @@ import About from './components/About';
 import Contact from './components/Contact';
 import useAuthUser from './hooks/useAuthUser';
 import { Route, Redirect } from 'react-router-dom';
-import BackgroundImage from './bg02.jpg';
 
 export default function App() {
   const page = useWindowSize();
@@ -29,8 +28,9 @@ export default function App() {
       <div
         className="app__body"
         style={{
-          backgroundImage: `url(${BackgroundImage})`,
+          backgroundImage: `url(https://res.cloudinary.com/dm89xfnl4/image/upload/v1632497132/hannah-lim-U6nlG0Y5sfs-unsplash_c242no.jpg)`,
           backgroundPosition: 'center',
+          backgroundSize: 'cover',
         }}
       >
         <Sidebar user={user} page={page} />
