@@ -3,7 +3,6 @@ import { Navbar } from './navbar';
 import { motion } from 'framer-motion';
 import './About.css';
 import useWindowSize from '../hooks/useWindowSize';
-import BackgroundImage from '../bg03.jpg';
 
 const aboutCopy =
   "Woofstr was inspired by 'fur baby' Slack channels in every cool workplace, and randomly bumping into other great dogs for our dogs to play with. Use Woofstr to connect and commiserate with other dog owners in any location, or down the street. Then share woofstr with fellow dog owners in your neighborhood to synchronize walking and play times.";
@@ -17,7 +16,7 @@ export default function About() {
       <div
         className="about__body"
         style={{
-          backgroundImage: `url(${BackgroundImage})`,
+          backgroundImage: `url(https://res.cloudinary.com/dm89xfnl4/image/upload/v1602237371/dogs_dgdypq.jpg)`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}

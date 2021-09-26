@@ -3,7 +3,6 @@ import './Login.css';
 import { Navbar } from './navbar';
 import { auth, provider } from '../firebase';
 import { motion } from 'framer-motion';
-import BackgroundImage from '../bg02.jpg';
 
 export default function Login() {
   function login() {
@@ -16,7 +15,7 @@ export default function Login() {
       <div
         className="login"
         style={{
-          backgroundImage: `url(${BackgroundImage})`,
+          backgroundImage: `url(https://res.cloudinary.com/dm89xfnl4/image/upload/v1632497132/hannah-lim-U6nlG0Y5sfs-unsplash_c242no.jpg)`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}

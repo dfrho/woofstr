@@ -3,7 +3,6 @@ import EmailForm from './EmailForm';
 import { Navbar } from './navbar';
 import './Contact.css';
 import useWindowSize from '../hooks/useWindowSize';
-import BackgroundImage from '../bg01.jpg';
 import styled from 'styled-components';
 
 const Prompt = styled.h3`
@@ -24,7 +23,8 @@ const ContactContainer = styled.div`
   height: 60vh;
   padding-top: 180px;
   @media (max-width: 480px) {
-    padding-top: 180px;
+    height: 90vh;
+    padding-top: 50px;
   }
 `;
 
@@ -37,7 +37,7 @@ export default function Contact() {
       <div
         className="contact__body"
         style={{
-          backgroundImage: `url(${BackgroundImage})`,
+          backgroundImage: `url(https://res.cloudinary.com/dm89xfnl4/image/upload/v1602539945/bg03_a7xgd9.jpg)`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
