@@ -18,6 +18,7 @@ export default function Login() {
         style={{
           backgroundImage: `url(${BackgroundImage})`,
           backgroundPosition: 'center',
+          backgroundSize: 'cover',
         }}
       >
         <motion.div
