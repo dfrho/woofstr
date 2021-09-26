@@ -27,6 +27,9 @@ const EmailInput = styled.input`
   border-radius: 4px;
   height: 2em;
   padding: 0px 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  width: 240px;
 `;
 
 const EmailMessageContainer = styled.div`
@@ -45,6 +48,8 @@ const EmailMessage = styled.textarea`
   border-radius: 4px;
   border: none;
   padding: 0px 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
 `;
 
 const SendButtonContainer = styled.div`
@@ -60,7 +65,7 @@ const SendButton = styled.button`
   background-color: #800080;
   color: #fff;
   width: 200px;
-  height: 2em;
+  height: 3em;
 `;
 
 const EmailForm = () => {
@@ -117,37 +122,6 @@ const EmailForm = () => {
     setMessage(newMessage);
   };
 
-  const EmailForm = () => (
-    <>
-      <label>Email</label>
-      <EmailInput
-        type="email"
-        name="email"
-        id="email"
-        placeholder="your email address"
-        onChange={onEmailChange}
-        value={email}
-        required
-      />
-      <EmailMessageContainer>
-        <label>Message</label>
-        <EmailMessage
-          name="message"
-          id="message"
-          placeholder="enter your message here"
-          onChange={onMessageChange}
-          value={message}
-        ></EmailMessage>
-      </EmailMessageContainer>
-      <SendButtonContainer>
-        <SendButton type="submit" disabled={disabled}>
-          Send
-        </SendButton>
-      </SendButtonContainer>
-      <span>{feedback}</span>
-      <input type="hidden" name="form-name" value="woofstr-signup" />
-    </>
-  );
   return (
     <>
       {isMobile ? (
@@ -156,7 +130,33 @@ const EmailForm = () => {
           onSubmit={submitRequest}
           className="email__form"
         >
-          <EmailForm />
+          <label>Email</label>
+          <EmailInput
+            type="email"
+            name="email"
+            id="email"
+            placeholder="your email address"
+            onChange={onEmailChange}
+            value={email}
+            required
+          />
+          <EmailMessageContainer>
+            <label>Message</label>
+            <EmailMessage
+              name="message"
+              id="message"
+              placeholder="enter your message here"
+              onChange={onMessageChange}
+              value={message}
+            ></EmailMessage>
+          </EmailMessageContainer>
+          <SendButtonContainer>
+            <SendButton type="submit" disabled={disabled}>
+              Send
+            </SendButton>
+          </SendButtonContainer>
+          <span>{feedback}</span>
+          <input type="hidden" name="form-name" value="woofstr-signup" />
         </EmailMobileFormContainer>
       ) : (
         <EmailTabletUpFormContainer
@@ -164,7 +164,33 @@ const EmailForm = () => {
           onSubmit={submitRequest}
           className="email__form"
         >
-          <EmailForm />
+          <label>Email</label>
+          <EmailInput
+            type="email"
+            name="email"
+            id="email"
+            placeholder="your email address"
+            onChange={onEmailChange}
+            value={email}
+            required
+          />
+          <EmailMessageContainer>
+            <label>Message</label>
+            <EmailMessage
+              name="message"
+              id="message"
+              placeholder="enter your message here"
+              onChange={onMessageChange}
+              value={message}
+            ></EmailMessage>
+          </EmailMessageContainer>
+          <SendButtonContainer>
+            <SendButton type="submit" disabled={disabled}>
+              Send
+            </SendButton>
+          </SendButtonContainer>
+          <span>{feedback}</span>
+          <input type="hidden" name="form-name" value="woofstr-signup" />
         </EmailTabletUpFormContainer>
       )}
     </>
