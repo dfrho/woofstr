@@ -9,10 +9,11 @@ const Prompt = styled.h3`
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
   width: 80vw;
-  padding: 0px 50px;
+  padding: 20px 50px;
   @media (max-width: 480px) {
     font-size: 24px;
     margin-bottom: 20px;
+    padding: 20px 20px 0 50px;
   }
 `;
 
@@ -24,6 +25,10 @@ const ContactContainer = styled.div`
   padding-top: 180px;
   @media (max-width: 480px) {
     height: 90vh;
+    padding-top: 50px;
+  }
+  @media (max-width: 768px) {
+    height: 100vh;
     padding-top: 50px;
   }
 `;
