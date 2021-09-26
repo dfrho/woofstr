@@ -133,7 +133,6 @@ const EmailForm = () => {
           onSubmit={submitRequest}
           className="email__form"
         >
-          <label>Email</label>
           <EmailInput
             type="email"
             name="email"
@@ -144,7 +143,6 @@ const EmailForm = () => {
             required
           />
           <EmailMessageContainer>
-            <label>Message</label>
             <EmailMessage
               name="message"
               id="message"
@@ -167,7 +165,6 @@ const EmailForm = () => {
           onSubmit={submitRequest}
           className="email__form"
         >
-          <label>Email</label>
           <EmailInput
             type="email"
             name="email"
@@ -178,7 +175,6 @@ const EmailForm = () => {
             required
           />
           <EmailMessageContainer>
-            <label>Message</label>
             <EmailMessage
               name="message"
               id="message"
