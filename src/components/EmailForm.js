@@ -50,6 +50,9 @@ const EmailMessage = styled.textarea`
   padding: 0px 4px;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
+  @media (min-width: 992px) {
+    max-width: 450px;
+  }
 `;
 
 const SendButtonContainer = styled.div`
