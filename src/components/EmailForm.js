@@ -50,7 +50,6 @@ const EmailMessage = styled.textarea`
   padding: 0px 4px;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  z-indez: 1000;
   @media (min-width: 992px) {
     max-width: 450px;
   }
@@ -148,7 +147,7 @@ const EmailForm = () => {
               name="message"
               id="message"
               placeholder="enter your message here"
-              onChange={onMessageChange}
+              onInput={onMessageChange}
               defaultValue={message}
             ></EmailMessage>
           </EmailMessageContainer>
