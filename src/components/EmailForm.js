@@ -147,7 +147,7 @@ const EmailForm = () => {
               name="message"
               id="message"
               placeholder="enter your message here"
-              onInput={onMessageChange}
+              onChange={onMessageChange}
               defaultValue={message}
             ></EmailMessage>
           </EmailMessageContainer>
