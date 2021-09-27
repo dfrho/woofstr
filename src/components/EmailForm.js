@@ -32,14 +32,14 @@ const EmailInput = styled.input`
   width: 240px;
 `;
 
-const EmailMessageContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 75vw;
-  margin: 24px 0px;
-`;
+// const EmailMessageContainer = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: flex-start;
+//   width: 75vw;
+//   margin: 24px 0px;
+// `;
 
 const EmailMessage = styled.textarea`
   width: 75vw;
@@ -142,15 +142,15 @@ const EmailForm = () => {
             value={email}
             required
           />
-          <EmailMessageContainer>
-            <EmailMessage
-              name="message"
-              id="message"
-              placeholder="enter your message here"
-              onChange={onMessageChange}
-              defaultValue={message}
-            ></EmailMessage>
-          </EmailMessageContainer>
+          {/* <EmailMessageContainer> */}
+          <EmailMessage
+            name="message"
+            id="message"
+            placeholder="enter your message here"
+            onChange={onMessageChange}
+            defaultValue={message}
+          ></EmailMessage>
+          {/* </EmailMessageContainer> */}
           <SendButtonContainer>
             <SendButton type="submit" disabled={disabled}>
               Send
@@ -174,15 +174,15 @@ const EmailForm = () => {
             value={email}
             required
           />
-          <EmailMessageContainer>
-            <EmailMessage
-              name="message"
-              id="message"
-              placeholder="enter your message here"
-              onChange={onMessageChange}
-              value={message}
-            ></EmailMessage>
-          </EmailMessageContainer>
+          {/* <EmailMessageContainer> */}
+          <EmailMessage
+            name="message"
+            id="message"
+            placeholder="enter your message here"
+            onChange={onMessageChange}
+            value={message}
+          ></EmailMessage>
+          {/* </EmailMessageContainer> */}
           <SendButtonContainer>
             <SendButton type="submit" disabled={disabled}>
               Send
