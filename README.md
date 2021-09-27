@@ -2,12 +2,13 @@
 
 Notification.wav from Envato Elements
 
-## Send Location Feature:
+## TODOS
 
-Get Mapbox Image with pin https://docs.mapbox.com/api/maps/static-images/#overlay-options
+Images from Unsplash and Shutterstock, give credit where due in About Footer
 
-BUG: Pin needs to be purple
+Fix Bug around contact form where cannot enter text in message field
 
-## Listen to Audio Feature:
+Animate background images for slow shift left or zoom:
+https://stackoverflow.com/questions/4342149/how-do-i-use-css3-animate-to-move-the-background-image-of-a-div-up-and-down
 
-BUG: Doesn't render audio play button, only loading spinner, on actual mobile devices and emulators. (Works fine on Chrome DevTools > Mobile view). See AudioPlayer.js component
+Align logo with elements on contact form
