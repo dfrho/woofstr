@@ -40,7 +40,10 @@ const EmailMessageContainer = styled.div`
   width: 75vw;
   margin: 24px 0px;
 `;
-
+/**
+ * user-select: none !important is added to all page css
+ * which was disabling the text selection from user
+ * */
 const EmailMessage = styled.textarea`
   width: 75vw;
   max-width: 600px;
@@ -50,6 +53,7 @@ const EmailMessage = styled.textarea`
   padding: 0px 4px;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
+  user-select: text !important;
   @media (min-width: 992px) {
     max-width: 450px;
   }
