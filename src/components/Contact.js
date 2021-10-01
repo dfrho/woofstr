@@ -29,7 +29,7 @@ const ContactContainer = styled.div`
   }
   @media (max-width: 768px) {
     height: 100vh;
-    padding-top: 50px;
+    padding-top: 20px;
   }
 `;
 
