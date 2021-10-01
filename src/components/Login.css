@@ -51,7 +51,7 @@
 
 @media (max-width: 760px) {
   .login__container {
-    padding: 100px 50px;
+    padding: 54px;
   }
   .login__text > h3 {
     font-size: 28px;
