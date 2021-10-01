@@ -32,7 +32,7 @@ export default function Login() {
             style={{ width: '175px', height: '175px' }}
           />
           <div>
-            <h3>Connect with Dog Owners near You</h3>
+            <h3 className="login_prompt">Connect with Dog Owners near You</h3>
           </div>
           <Button onClick={login}>Sign in with Google</Button>
         </motion.div>

@@ -44,6 +44,10 @@
   margin-top: 50px;
 }
 
+.login_prompt {
+  height: 2.3em;
+}
+
 @media (max-width: 760px) {
   .login__container {
     padding: 100px 50px;
