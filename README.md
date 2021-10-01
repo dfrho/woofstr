@@ -1,7 +1,5 @@
 # NOTES
 
-Notification.wav from Envato Elements
-
 ## TODOS
 
 Images from Unsplash and Shutterstock, give credit where due in About Footer
