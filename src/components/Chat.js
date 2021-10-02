@@ -38,6 +38,7 @@ export default function Chat({ user, page }) {
   const room = useRoom(roomID, user.uid);
   const divRef = useRef(null);
 
+  //lines 41-50 are buggy
   function scrollToBottom() {
     divRef?.current?.scrollIntoView({
       behavior: 'smooth',
