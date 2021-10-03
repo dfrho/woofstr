@@ -181,9 +181,11 @@ export default function Sidebar({ user, page }) {
 
       {menu === 2 ? (
         <div className="sidebar__chat--addRoom">
-          <IconButton onClick={createRoom}>
-            <Add />
-          </IconButton>
+          <Tooltip title="add room">
+            <IconButton onClick={createRoom}>
+              <Add />
+            </IconButton>
+          </Tooltip>
         </div>
       ) : null}
     </div>
