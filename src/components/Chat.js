@@ -9,6 +9,7 @@ import {
   IconButton,
   Menu,
   MenuItem,
+  Tooltip,
 } from '@material-ui/core';
 import {
   AddPhotoAlternate,
@@ -36,7 +37,6 @@ export default function Chat({ user, page }) {
   const history = useHistory();
   const messages = useChatMessages(roomID);
   const room = useRoom(roomID, user.uid);
-  const divRef = useRef(null);
   const geoLocation = useGeoLocation();
 
   const AlwaysScrollToBottom = () => {
@@ -190,8 +190,8 @@ export default function Chat({ user, page }) {
     const MAPBOX_API_KEY =
       'pk.eyJ1IjoiYnViYmFzZGFkIiwiYSI6ImNrdGZ2bGV4NDBjMWgycHJ0cDE1Z3A2OW4ifQ.lHwOcjL8X-YucjD_U6jt3Q';
     // baseUrl based on https://docs.mapbox.com/api/maps/static-images/#overlay-options
-    const baseUrlTwo = `https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s+800080(${geoLocation.longitude},${geoLocation.latitude})/${geoLocation.longitude},${geoLocation.latitude},15/500x300?access_token=${MAPBOX_API_KEY}`;
-    onMapPreview(baseUrlTwo);
+    const baseUrl = `https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s+800080(${geoLocation.longitude},${geoLocation.latitude})/${geoLocation.longitude},${geoLocation.latitude},15/500x300?access_token=${MAPBOX_API_KEY}`;
+    onMapPreview(baseUrl);
   }
 
   return (
@@ -221,19 +221,25 @@ export default function Chat({ user, page }) {
             accept="image/*"
             onChange={showPreview}
           />
-          <IconButton onClick={previewLocation}>
-            <label style={{ cursor: 'pointer', height: 24 }} htmlFor="image">
-              <AddLocation />
-            </label>
-          </IconButton>
-          <IconButton>
-            <label style={{ cursor: 'pointer', height: 24 }} htmlFor="image">
-              <AddPhotoAlternate />
-            </label>
-          </IconButton>
-          <IconButton onClick={(event) => setOpenMenu(event.currentTarget)}>
-            <MoreVert />
-          </IconButton>
+          <Tooltip title="send location">
+            <IconButton onClick={previewLocation}>
+              <label style={{ cursor: 'pointer', height: 24 }} htmlFor="image">
+                <AddLocation />
+              </label>
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="send image">
+            <IconButton>
+              <label style={{ cursor: 'pointer', height: 24 }} htmlFor="image">
+                <AddPhotoAlternate />
+              </label>
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="delete room">
+            <IconButton onClick={(event) => setOpenMenu(event.currentTarget)}>
+              <MoreVert />
+            </IconButton>
+          </Tooltip>
           <Menu
             anchorEl={openMenu}
             id="menu"
@@ -255,7 +261,6 @@ export default function Chat({ user, page }) {
             setAudioID={setAudioID}
           />
           <AlwaysScrollToBottom />
-          <div ref={divRef} />
         </div>
       </div>
       <MediaPreview src={previewSrc} closePreview={closePreview} />

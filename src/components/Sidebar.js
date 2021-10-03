@@ -13,7 +13,7 @@ import {
   SearchOutlined,
 } from '@material-ui/icons';
 import { NavLink, Switch, Route } from 'react-router-dom';
-import { Tooltip } from '@chakra-ui/react';
+import Tooltip from '@material-ui/core/Tooltip';
 import useRooms from '../hooks/useRooms';
 import useUsers from '../hooks/useUsers';
 import useChats from '../hooks/useChats';
@@ -98,7 +98,7 @@ export default function Sidebar({ user, page }) {
           <h4>{user?.displayName}</h4>
         </div>
         <div className="sidebar__header--right">
-          <Tooltip label="log out">
+          <Tooltip title="log out">
             <IconButton onClick={signOut}>
               <ExitToApp />
             </IconButton>
