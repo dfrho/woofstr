@@ -23,13 +23,14 @@ const ContactContainer = styled.div`
   justify-content: space-around;
   height: 60vh;
   padding-top: 180px;
+  z-index: 99;
   @media (max-width: 480px) {
     height: 90vh;
     padding-top: 50px;
   }
   @media (max-width: 768px) {
     height: 100vh;
-    padding-top: 20px;
+    padding-top: 50px;
   }
 `;
 
@@ -48,11 +49,11 @@ export default function Contact() {
         }}
       >
         {' '}
-        <ContactContainer>
-          <Prompt>We'd love to hear from you!</Prompt>
-          <EmailForm />
-        </ContactContainer>
       </div>
+      <ContactContainer>
+        <Prompt>We'd love to hear from you!</Prompt>
+        <EmailForm />
+      </ContactContainer>
     </div>
   );
 }
