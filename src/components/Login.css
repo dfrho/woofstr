@@ -20,11 +20,11 @@
 
 .bg {
   background-color: #f8f8f8;
-  height: calc(100vh - 55px);
+  height: calc(100vh - var(--NAV_HEIGHT));
   width: 100%;
   animation: grow infinite alternate ease-in-out 8s;
   position: absolute;
-  top: 55px;
+  top: var(--NAV_HEIGHT);
 }
 
 @keyframes grow {
