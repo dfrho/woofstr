@@ -46,8 +46,6 @@
 
 @media (max-width: 760px) {
   .contact__body {
-    display: block;
-    position: relative;
     border-radius: 0;
     background-color: white;
     border-top: none;
