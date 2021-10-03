@@ -2,14 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 62px;
   background-color: transparent;
   z-index: 1;
   padding: 0 24px;
   height: 54px;
   position: absolute;
   width: calc(100% + 56px);
-  bottom: 16px;
+  bottom: 2px;
   z-index: 5;
   transform: translateZ(456px);
 }

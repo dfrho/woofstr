@@ -13,15 +13,16 @@ export default function Login() {
     <div className="app">
       <Navbar />
       <div
-        className="login"
+        className="bg"
         style={{
           backgroundImage: `url(https://res.cloudinary.com/dm89xfnl4/image/upload/v1632497132/hannah-lim-U6nlG0Y5sfs-unsplash_c242no.jpg)`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
-      >
+      ></div>
+      <div className="login__container">
         <motion.div
-          className="login__container"
+          className="login"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.5 }}
