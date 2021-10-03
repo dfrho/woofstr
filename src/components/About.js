@@ -20,7 +20,8 @@ export default function About() {
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
-      >
+      ></div>
+      <div className="about__placeholder">
         <motion.div
           className="about__container"
           initial={{ scale: 0 }}
