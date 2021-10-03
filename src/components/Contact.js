@@ -13,7 +13,7 @@ const Prompt = styled.h3`
   @media (max-width: 480px) {
     font-size: 24px;
     margin-bottom: 20px;
-    padding: 20px 20px 0 50px;
+    padding: 20px 20px 0 35px;
   }
 `;
 

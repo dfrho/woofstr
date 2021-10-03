@@ -12,9 +12,12 @@ const NavbarContainer = styled.div`
   box-shadow: 0 1px 3px rgba(15, 15, 15, 0.13);
   display: flex;
   align-items: center;
-  padding: 0 1.5em;
+  padding: 0 50px;
   z-index: 2;
   background: white;
+  @media (max-width: 480px) {
+    padding: 0 35px;
+  }
 `;
 
 const LeftSection = styled.div`
