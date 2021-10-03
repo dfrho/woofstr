@@ -48,15 +48,19 @@ const Marginer = styled.div`
 export function MobileNavLinks(props) {
   const [isOpen, setOpen] = useState(false);
 
+  const forceClose = () => {
+    setOpen(false);
+  };
+
   return (
     <NavLinksContainer>
       <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
       {isOpen && (
         <LinksWrapper>
-          <LinkItem>
+          <LinkItem onClick={forceClose}>
             <StyledLink to="/about">About</StyledLink>
           </LinkItem>
-          <LinkItem>
+          <LinkItem onClick={forceClose}>
             <StyledLink to="/contact">Contact</StyledLink>
           </LinkItem>
           <Marginer />
