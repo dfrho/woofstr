@@ -9,7 +9,7 @@ const EmailMobileFormContainer = styled.form`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0px 50px;
+  padding: 0px 35px;
   height: 90vh;
 `;
 
