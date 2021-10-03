@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.login {
+.login__container {
   background-color: #f8f8f8;
   height: 100%;
   width: 100%;
@@ -18,7 +18,25 @@
   justify-content: center;
 }
 
-.login__container {
+.bg {
+  background-color: #f8f8f8;
+  height: calc(100vh - 55px);
+  width: 100%;
+  animation: grow infinite alternate ease-in-out 8s;
+  position: absolute;
+  top: 55px;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.04);
+  }
+}
+
+.login {
   padding: 50px;
   text-align: center;
   background-color: white;
@@ -32,13 +50,13 @@
   opacity: 0.7;
 }
 
-.login__container > img {
+.login > img {
   object-fit: contain;
   height: 100px;
   margin-bottom: 40px;
 }
 
-.login__container > button {
+.login > button {
   text-transform: inherit !important;
   background-color: #800080 !important;
   color: white;
@@ -50,7 +68,7 @@
 }
 
 @media (max-width: 760px) {
-  .login__container {
+  .login {
     padding: 54px;
   }
   .login__text > h3 {
@@ -60,7 +78,7 @@
 }
 
 @media (max-width: 435px) {
-  .login__container {
+  .login {
     padding: 50px 25px;
     margin-bottom: 80px;
   }

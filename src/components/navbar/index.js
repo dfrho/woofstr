@@ -13,6 +13,8 @@ const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
   padding: 0 1.5em;
+  z-index: 2;
+  background: white;
 `;
 
 const LeftSection = styled.div`
