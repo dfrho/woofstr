@@ -16,7 +16,7 @@ export default function About() {
       <div
         className="about__body"
         style={{
-          backgroundImage: `url(https://res.cloudinary.com/dm89xfnl4/image/upload/v1602237371/dogs_dgdypq.jpg)`,
+          backgroundImage: `url(https://res.cloudinary.com/dm89xfnl4/image/upload/v1633290162/shutterstock_221403820_npk2rd.png)`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
