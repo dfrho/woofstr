@@ -20,11 +20,8 @@
 
 .contact__body {
   background-color: white;
-  display: flex;
-  height: 100%;
   width: 100%;
   overflow: hidden;
-  position: relative;
   height: calc(100vh - var(--NAV_HEIGHT));
   animation: grow infinite alternate ease-in-out 8s;
   position: absolute;

@@ -39,8 +39,7 @@ export default function Contact() {
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
-      >
-      </div>
+      ></div>
       <ContactContainer>
         <Prompt>We'd love to hear from you!</Prompt>
         <EmailForm />

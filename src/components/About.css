@@ -20,17 +20,13 @@
 
 .about__body {
   background-color: #ededed;
-  display: flex;
   box-shadow: -1px 4px 20px 6px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-  border-top: 1px solid lightgrey;
-  height: calc(100vh - var(--NAV_HEIGHT));
+  overflow: visible;
+  height: calc(100vh - var(--NAV_HEIGHT) + 5px);
   width: 100%;
   animation: grow infinite alternate ease-in-out 8s;
   position: absolute;
-  top: var(--NAV_HEIGHT);
+  top: 50px;
 }
 
 .loader__container {
