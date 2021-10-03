@@ -25,10 +25,10 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  height: calc(100vh - 55px);
+  height: calc(100vh - var(--NAV_HEIGHT));
   animation: grow infinite alternate ease-in-out 8s;
   position: absolute;
-  top: 55px;
+  top: var(--NAV_HEIGHT);
 }
 
 .loader__container {

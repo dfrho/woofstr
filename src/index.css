@@ -18,3 +18,7 @@ a {
 .MuiSvgIcon-root {
   color: #800080;
 }
+
+:root {
+  --NAV_HEIGHT: 55px;
+}
