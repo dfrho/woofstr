@@ -10,27 +10,20 @@ export default function ChatMessages({
   setAudioID,
 }) {
   const previousMessages = usePrevious(messages);
-  // set up ref element that's invisible display:none
   const inputRef = useRef(null);
   const onSimulatedClick = () => {
     const sound = new Audio('../../popup-sound.wav');
     sound.play();
   };
+
   const Hidden = () => {
-    return (
-      <div
-        style={{ display: 'none' }}
-        ref={inputRef}
-        onClick={onSimulatedClick}
-      ></div>
-    );
+    return <div ref={inputRef} onClick={onSimulatedClick}></div>;
   };
+
   if (previousMessages?.length < messages?.length) {
-    // simulate click
     inputRef.current.click();
-    // move lines 16-17 to onSimulatedClick function
-    // set the onClick for ref to onSimulatedClick
   }
+
   if (messages) {
     return messages.map((message) => {
       const isSender = message.uid === user.uid;
