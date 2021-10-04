@@ -11,6 +11,7 @@ export default function ChatMessages({
   const previousMessages = usePrevious(messages);
   if (previousMessages?.length < messages?.length) {
     const sound = new Audio('../../popup-sound.wav');
+    sound.volume = 1;
     sound.play();
   }
   if (messages) {
