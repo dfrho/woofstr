@@ -20,6 +20,7 @@ import {
 import { useHistory, useParams } from 'react-router-dom';
 import useRoom from '../hooks/useRoom';
 import useChatMessages from '../hooks/useChatMessages';
+import usePrevious from '../hooks/usePrevious';
 import { useGeoLocation } from '../hooks/useGeoLocation';
 import './Chat.css';
 import { v4 as uuid } from 'uuid';
@@ -38,6 +39,21 @@ export default function Chat({ user, page }) {
   const messages = useChatMessages(roomID);
   const room = useRoom(roomID, user.uid);
   const geoLocation = useGeoLocation();
+
+  const previousMessages = usePrevious(messages);
+  const inputRef = useRef(null);
+  const onSimulatedClick = () => {
+    const sound = new Audio('../../popup-sound.wav');
+    sound.play();
+  };
+
+  const HiddenPopper = () => {
+    return <div ref={inputRef} onClick={onSimulatedClick}></div>;
+  };
+
+  if (previousMessages?.length < messages?.length) {
+    inputRef.current.click();
+  }
 
   const AlwaysScrollToBottom = () => {
     const elementRef = useRef();
@@ -261,6 +277,7 @@ export default function Chat({ user, page }) {
             setAudioID={setAudioID}
           />
           <AlwaysScrollToBottom />
+          <HiddenPopper />
         </div>
       </div>
       <MediaPreview src={previewSrc} closePreview={closePreview} />
