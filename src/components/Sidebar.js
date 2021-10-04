@@ -126,7 +126,9 @@ export default function Sidebar({ user, page }) {
           activeClassName="sidebar__menu--selected"
         >
           <div className="sidebar__menu--home">
-            <Home style={{ fill: 'purple' }} />
+            <Tooltip title="all chats" placement="top">
+              <Home style={{ fill: 'purple' }} />
+            </Tooltip>
             <div className="sidebar__menu--line" />
           </div>
         </Nav>
@@ -137,7 +139,9 @@ export default function Sidebar({ user, page }) {
           activeClassName="sidebar__menu--selected"
         >
           <div className="sidebar__menu--rooms">
-            <Message style={{ fill: 'purple' }} />
+            <Tooltip title="rooms" placement="top">
+              <Message style={{ fill: 'purple' }} />
+            </Tooltip>
             <div className="sidebar__menu--line" />
           </div>
         </Nav>
@@ -148,7 +152,9 @@ export default function Sidebar({ user, page }) {
           activeClassName="sidebar__menu--selected"
         >
           <div className="sidebar__menu--users">
-            <PeopleAlt style={{ fill: 'purple' }} />
+            <Tooltip title="users" placement="top">
+              <PeopleAlt style={{ fill: 'purple' }} />
+            </Tooltip>
             <div className="sidebar__menu--line" />
           </div>
         </Nav>
