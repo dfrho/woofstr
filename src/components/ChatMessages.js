@@ -13,6 +13,7 @@ export default function ChatMessages({
   const inputRef = useRef(null);
   const onSimulatedClick = () => {
     const sound = new Audio('../../popup-sound.wav');
+    sound.autoplay = true;
     sound.play();
   };
 
