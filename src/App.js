@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
 import useWindowSize from './hooks/useWindowSize';
+import loadable from '@loadable/component';
 import Login from './components/Login';
-import Sidebar from './components/Sidebar';
-import Chat from './components/Chat';
-import About from './components/About';
-import Contact from './components/Contact';
 import useAuthUser from './hooks/useAuthUser';
 import { Route, Redirect } from 'react-router-dom';
+const Sidebar = loadable(() => import('./components/Sidebar'));
+const Chat = loadable(() => import('./components/Chat'));
+const About = loadable(() => import('./components/About'));
+const Contact = loadable(() => import('./components/Contact'));
 
 export default function App() {
   const page = useWindowSize();
