@@ -35,7 +35,7 @@ export default function Contact() {
       <div
         className="contact__body"
         style={{
-          backgroundImage: `url(https://res.cloudinary.com/dm89xfnl4/image/upload/v1602539945/bg03_a7xgd9.jpg)`,
+          backgroundImage: `url(https://res.cloudinary.com/dm89xfnl4/image/upload/v1602539945/bg03_a7xgd9.webp)`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}

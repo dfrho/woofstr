@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import WooftrLogoImg from './logo.png';
 
 const LogoLink = styled(Link)`
   display: flex;
@@ -32,7 +31,10 @@ export function Logo(props) {
   return (
     <LogoLink to="/">
       <LogoImg>
-        <img src={WooftrLogoImg} alt="woofstr logo" />
+        <img
+          src="https://res.cloudinary.com/dm89xfnl4/image/upload/v1633450776/logo_lfkrlx.webp"
+          alt="woofstr logo"
+        />
       </LogoImg>
       <LogoText>woofstr</LogoText>
     </LogoLink>

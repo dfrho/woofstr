@@ -15,7 +15,7 @@ export default function Login() {
       <div
         className="bg"
         style={{
-          backgroundImage: `url(https://res.cloudinary.com/dm89xfnl4/image/upload/v1632497132/hannah-lim-U6nlG0Y5sfs-unsplash_c242no.jpg)`,
+          backgroundImage: `url(https://res.cloudinary.com/dm89xfnl4/image/upload/v1632497132/hannah-lim-U6nlG0Y5sfs-unsplash_c242no.webp)`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
@@ -28,7 +28,7 @@ export default function Login() {
           transition={{ duration: 0.5 }}
         >
           <img
-            src="../login-logo.png"
+            src="https://res.cloudinary.com/dm89xfnl4/image/upload/v1633450534/login-logo_hfwb2f.webp"
             alt="Logo"
             style={{ width: '175px', height: '175px' }}
           />
