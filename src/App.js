@@ -28,7 +28,7 @@ export default function App() {
       <div
         className="app__body"
         style={{
-          backgroundImage: `url(https://res.cloudinary.com/dm89xfnl4/image/upload/v1632497132/hannah-lim-U6nlG0Y5sfs-unsplash_c242no.jpg)`,
+          backgroundImage: `url(https://res.cloudinary.com/dm89xfnl4/image/upload/v1632497132/hannah-lim-U6nlG0Y5sfs-unsplash_c242no.webp)`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
