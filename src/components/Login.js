@@ -28,7 +28,7 @@ export default function Login() {
           transition={{ duration: 0.5 }}
         >
           <img
-            src="https://res.cloudinary.com/dm89xfnl4/image/upload/v1633450534/login-logo_hfwb2f.webp"
+            src="https://res.cloudinary.com/dm89xfnl4/image/upload/c_scale,w_200/v1633450534/login-logo_hfwb2f.png"
             alt="Logo"
             style={{ width: '175px', height: '175px' }}
           />
