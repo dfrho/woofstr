@@ -32,7 +32,7 @@ export function Logo(props) {
     <LogoLink to="/">
       <LogoImg>
         <img
-          src="https://res.cloudinary.com/dm89xfnl4/image/upload/v1633450776/logo_lfkrlx.webp"
+          src="https://res.cloudinary.com/dm89xfnl4/image/upload/c_scale,w_100/v1633450776/logo_lfkrlx.webp"
           alt="woofstr logo"
         />
       </LogoImg>
