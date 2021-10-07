@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar } from './navbar';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import './About.css';
 import useWindowSize from '../hooks/useWindowSize';
 
@@ -22,17 +22,17 @@ export default function About() {
         }}
       ></div>
       <div className="about__placeholder">
-        <motion.div
+        <div
           className="about__container"
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
+          // initial={{ scale: 0 }}
+          // animate={{ scale: 1 }}
+          // transition={{ duration: 0.5 }}
         >
           <div>
             <h3 className="about__title">About Woofstr</h3>
             <p>{aboutCopy}</p>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
