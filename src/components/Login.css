@@ -65,7 +65,7 @@
 
 .login_prompt {
   height: 2.3em;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 760px) {
