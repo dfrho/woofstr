@@ -79,6 +79,8 @@
 
 .about__title {
   margin-bottom: 20px;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 760px) {
@@ -91,9 +93,6 @@
   .about__container {
     padding: 50px 25px;
   }
-  /* .about__placeholder {
-    margin-top: 100px;
-  } */
 }
 
 @keyframes grow {

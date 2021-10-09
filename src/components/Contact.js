@@ -8,6 +8,7 @@ import styled from 'styled-components';
 const Prompt = styled.h3`
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
+  font-weight: 700;
   width: 80vw;
   padding: 20px 50px;
   @media (max-width: 480px) {
