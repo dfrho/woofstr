@@ -25,6 +25,9 @@ const ContactContainer = styled.div`
   z-index: 1;
   height: 90vh;
   padding-top: 50px;
+  @media (max-width: 480px) {
+    padding-top: 0;
+  }
 `;
 
 export default function Contact() {
