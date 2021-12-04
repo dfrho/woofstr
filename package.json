@@ -12,6 +12,7 @@
     "emailjs-com": "^3.2.0",
     "firebase": "^8.6.3",
     "framer-motion": "^4.1.17",
+    "logrocket": "^2.1.2",
     "react": "^17.0.2",
     "react-audio-player": "^0.17.0",
     "react-dom": "^17.0.2",
