@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import useWindowSize from './hooks/useWindowSize';
 import loadable from '@loadable/component';
-import LogRocket from 'logrocket';
 import Login from './components/Login';
 import useAuthUser from './hooks/useAuthUser';
 import { Route, Redirect } from 'react-router-dom';
@@ -14,7 +13,6 @@ const Contact = loadable(() => import('./components/Contact'));
 export default function App() {
   const page = useWindowSize();
   const user = useAuthUser();
-  LogRocket.init('ivpihw/woofstr');
 
   if (!user) {
     return (
